@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>مطعم ألبان سويسرا - المزيد</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f4f8; color: #023e8a; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch button { background-color: #48cae4; color: white; border: none; padding: 8px 15px; margin-left: 10px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }
+.lang-switch button:hover { background-color: #0096c7; transform: scale(1.05); }
+.page-header { text-align: center; margin-bottom: 30px; }
+.page-header h1 { font-size: 36px; color: #0077b6; margin-bottom: 10px; }
+.page-header p { font-size: 18px; color: #0096c7; }
+.place-details { display: flex; gap: 50px; align-items: flex-start; justify-content: space-between; }
+.details-content { flex: 1; }
+.details-content h2 { font-size: 32px; margin-bottom: 20px; color: #0077b6; }
+.details-content h3 { font-size: 24px; margin-top: 25px; margin-bottom: 15px; color: #0096c7; }
+.details-content p { font-size: 16px; line-height: 1.8; margin-bottom: 12px; }
+.place-image { flex: 1; text-align: right; }
+.place-image img { width: 100%; max-width: 450px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+.place-image img:hover { transform: scale(1.03); }
+.btn-map { display: inline-block; background-color: #90e0ef; color: #023e8a; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; font-size: 16px; margin-top: 20px; }
+.btn-map:hover { background-color: #48cae4; transform: scale(1.05); }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+<button onclick="switchLanguage('ar')">عربي</button>
+<button onclick="switchLanguage('en')">English</button>
+</div>
+
+<div class="page-header">
+<h1 data-ar="دليل سياحي لمدينة الإسكندرية" data-en="Tourist Guide for Alexandria">دليل سياحي لمدينة الإسكندرية</h1>
+<p data-ar="جنة عشاق الأجبان في الإسكندرية" data-en="Cheese lovers' paradise in Alexandria">جنة عشاق الأجبان في الإسكندرية</p>
+</div>
+
+<div class="place-details">
+<div class="details-content">
+<h2 data-ar="مطعم ألبان سويسرا" data-en="Alban Swissra Restaurant">مطعم ألبان سويسرا</h2>
+
+<h3 data-ar="نشأة المكان" data-en="Origin of the Place">نشأة المكان</h3>
+<p data-ar="بدأ كمحل لبيع الألبان والجبن في حي كامب شيزار، ثم تحول إلى ظاهرة في عالم المطاعم بفضل ابتكاره لطريقة تقديم طاسات الجبن السايحة مع الإضافات المختلفة."
+   data-en="Started as a dairy and cheese shop in Camp Shezar, then turned into a restaurant phenomenon thanks to its innovative melted cheese 'tasas' with various toppings.">
+بدأ كمحل لبيع الألبان والجبن في حي كامب شيزار، ثم تحول إلى ظاهرة في عالم المطاعم بفضل ابتكاره لطريقة تقديم طاسات الجبن السايحة مع الإضافات المختلفة.
+</p>
+
+<h3 data-ar="معلومات عنه" data-en="Information">معلومات عنه</h3>
+<p data-ar="يعتبر الوجهة الأولى لمحبي الأجبان، حيث يقدم اللحوم والسجق والبسطرمة غارقة في مزيج من الأجبان السويسرية والمصرية. المطعم رغم بساطة مكانه إلا أنه يزدحم بالزوار من كافة المحافظات."
+   data-en="It is the top destination for cheese lovers, serving meat, sausage, and pastrami drenched in a mix of Swiss and Egyptian cheeses. Despite its simple setting, it's crowded with visitors from all provinces.">
+يعتبر الوجهة الأولى لمحبي الأجبان، حيث يقدم اللحوم والسجق والبسطرمة غارقة في مزيج من الأجبان السويسرية والمصرية. المطعم رغم بساطة مكانه إلا أنه يزدحم بالزوار من كافة المحافظات.
+</p>
+
+<a href="restaurants.html" class="btn-map" data-ar="عودة للصفحة الرئيسية" data-en="Back to Main Page">عودة للصفحة الرئيسية</a>
+</div>
+
+<div class="place-image">
+<img src="v.jpg" alt="مطعم ألبان سويسرا">
+</div>
+</div>
+
+<script>
+function switchLanguage(lang) {
+document.querySelectorAll('[data-ar]').forEach(el => { el.innerText = (lang==='ar')? el.getAttribute('data-ar') : el.getAttribute('data-en'); });
+}
+</script>
+
+<footer>
+<p>© 2026 دليل سياحي لمدينة الإسكندرية</p>
+<p>اعداد و تنفيذ الطالب احمد عصام محمد توفيق</p>
+</footer>
+</body>
+</html>

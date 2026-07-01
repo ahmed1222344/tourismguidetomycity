@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7f9;
+    direction: rtl;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f766e, #0ea5a4);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.place {
+    display: flex;
+    flex-direction: row-reverse; /* الصورة على اليمين */
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+    background-color: white;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.place:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+}
+
+.place-image {
+    flex: 1;
+}
+
+.place-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.place-content {
+    flex: 1;
+}
+
+.place-content h2 {
+    color: #0f766e;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.place-content p {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .place {
+        flex-direction: column;
+    }
+
+    .place-image img {
+        height: 220px;
+    }
+}
+.lang-switch {
+    margin-top: 20px;
+}
+
+.lang-switch button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: white;
+    color: #0f766e;
+}
+
+.lang-switch button:hover {
+    background-color: #0f766e;
+    color: white;
+}
+/* زر اعرف المزيد */
+.btn-more {
+    display: inline-block;
+    background-color: #0077b6; /* أزرق جذاب */
+    color: white;
+    padding: 12px 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-more:hover {
+    background-color: #0096c7;
+    transform: scale(1.05);
+}
+
+/* ===== Responsive Fix ===== */
+
+.place {
+    display: flex;
+    gap: 20px;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+    .place {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .place-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-more,
+    .btn-map,
+    a {
+        display: inline-block;
+        margin: 10px auto;
+    }
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.btn-category {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-category:hover {
+    background-color: #0056b3;
+}
+

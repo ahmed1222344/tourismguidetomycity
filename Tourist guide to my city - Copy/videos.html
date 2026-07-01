@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فيديوهات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" style="display: flex; align-items: center; justify-content: center; gap: 20px; padding: 20px;">
+
+    <div>
+        <img src="city.jpg" alt="شعار الإسكندرية" style="height: 80px;">
+    </div>
+
+
+    <div style="text-align: center;">
+        <h1>دليل سياحي لمدينة الإسكندرية</h1>
+        <p>اكتشف أهم المعالم التاريخية والطبيعية بطريقة جذابة</p>
+        <div class="lang-switch" style="margin-top: 10px;">
+            <button onclick="setLanguage('ar')">عربي</button>
+            <button onclick="setLanguage('en')">English</button>
+        </div>
+
+<div class="category-buttons" style="margin-top:15px; display:flex; gap:10px; justify-content:center;">
+    
+    <a href="home.html" 
+       data-ar="الرئيسية" 
+       data-en="Home" 
+       class="btn-category">
+       الرئيسية
+    </a>
+
+    <a href="videos.html" 
+       data-ar="فيديوهات" 
+       data-en="Videos" 
+       class="btn-category">
+       فيديوهات
+    </a>
+
+    <a href="about-alex.html" 
+       data-ar="عن اسكندرية" 
+       data-en="About Alexandria" 
+       class="btn-category">
+       عن اسكندرية
+    </a>
+
+    <a href="restaurants.html" 
+       data-ar="مطاعم" 
+       data-en="Restaurants" 
+       class="btn-category">
+       مطاعم
+    </a>
+
+    <a href="shops.html" 
+       data-ar="محلات" 
+       data-en="Shops" 
+       class="btn-category">
+       محلات
+    </a>
+
+    <a href="index.html" 
+       data-ar="أماكن سياحية" 
+       data-en="Tourist Spots" 
+       class="btn-category">
+       أماكن سياحية
+    </a>
+
+</div>
+</div>
+    </a>
+</div>
+    </div>
+
+
+    <div>
+        <img src="city.jpg" alt="شعار الإسكندرية" style="height: 80px;">
+    </div>
+</header>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#e0f7fa,#ffffff);
+}
+
+h1{
+    text-align:center;
+    padding:30px 0;
+    color:#00695c;
+    font-size:32px;
+}
+
+.video-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding-bottom:50px;
+}
+
+.video-card{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.video-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+.video-card video{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.video-title{
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#004d40;
+}
+</style>
+</head>
+
+<body>
+    
+
+<h1>فيديوهات عن اسكندرية 🎥</h1>
+
+<div class="video-container">
+
+
+    <div class="video-card">
+        <video controls>
+            <source src="videos/1.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">مقابر الانفوشي</div>
+    </div>
+
+    <div class="video-card">
+        <video controls>
+            <source src="videos/2.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">المتحف اليوناني الروماني</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/3.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">حدائق الشلالات</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/4.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">جزيرة الشاي</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/5.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">متحف الفنون الجميلة</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/6.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">المسرح الروماني</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/7.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">قصر رأس التين</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/8.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">أبو قير</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/9.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">مكتبة الإسكندرية الجديدة</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/10.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">قلعة قايتباي</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/11.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">عمود السواري</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/12.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">مقابر كوم الشقافة</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/13.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">متحف المجوهرات الملكية</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/14.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">متحف الإسكندرية القومي</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/15.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">كوبري ستانلي</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/16.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">مسجد أبي العباس المرسي</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/17.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">حدائق أنطونيادس</div>
+    </div>
+
+        <div class="video-card">
+        <video controls>
+            <source src="videos/18.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">متحف الأحياء المائية</div>
+    </div>
+
+    
+
+  
+    
+</div>
+
+    <div style="text-align:center; margin:40px 0;">
+    <a href="survey-form.html" class="btn-survey">شاركنا رأيك</a>
+</div>
+
+<style>
+.btn-survey {
+    background: #0077cc; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-survey:hover {
+    background: #005fa3;
+}
+</style>
+</section>
+
+<footer>
+    <p>© 2026 دليل سياحي لمدينة الإسكندرية</p> <p>اعداد و تنفيذ الطالب احمد عصام محمد توفيق</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

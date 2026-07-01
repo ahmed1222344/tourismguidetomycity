@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استطلاع رأي</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #74ebd5;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #5750d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>شاركونا رأيكم ✨</h2>
+        
+        <form action="https://formspree.io/f/mwvnkwkw" method="POST">
+            
+            <div class="form-group">
+                <label>الاسم بالكامل</label>
+                <input type="text" name="name" placeholder="اكتب اسمك هنا" required>
+            </div>
+
+            <div class="form-group">
+                <label>رقم التليفون</label>
+                <input type="tel" name="phone" placeholder="01xxxxxxxxx" required>
+            </div>
+
+            <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>رأيك في الخدمة</label>
+                <input type="text" name="opinion" placeholder="اكتب رأيك هنا..." required>
+            </div>
+
+            <div class="form-group">
+                <label>اقتراحاتك لتطويرنا</label>
+                <textarea name="suggestions" rows="4" placeholder="قولنا نحسن إيه..."></textarea>
+            </div>
+
+            <button type="submit">إرسال البيانات</button>
+        </form>
+    </div>
+
+</body>
+</html>

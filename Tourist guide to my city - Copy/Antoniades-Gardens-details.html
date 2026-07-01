@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>حدائق أنطونيادس - المزيد</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f0f4f8; color: #023e8a; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch button { background-color: #48cae4; color: white; border: none; padding: 8px 15px; margin-left: 10px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }
+.lang-switch button:hover { background-color: #0096c7; transform: scale(1.05); }
+.page-header { text-align: center; margin-bottom: 30px; }
+.page-header h1 { font-size: 36px; color: #0077b6; margin-bottom: 10px; }
+.page-header p { font-size: 18px; color: #0096c7; }
+.place-details { display: flex; gap: 50px; align-items: flex-start; justify-content: space-between; }
+.details-content { flex: 1; }
+.details-content h2 { font-size: 32px; margin-bottom: 20px; color: #0077b6; }
+.details-content h3 { font-size: 24px; margin-top: 25px; margin-bottom: 15px; color: #0096c7; }
+.details-content p { font-size: 16px; line-height: 1.8; margin-bottom: 12px; }
+.place-image { flex: 1; text-align: right; }
+.place-image img { width: 100%; max-width: 450px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+.place-image img:hover { transform: scale(1.03); }
+.btn-map { display: inline-block; background-color: #90e0ef; color: #023e8a; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; font-size: 16px; margin-top: 20px; }
+.btn-map:hover { background-color: #48cae4; transform: scale(1.05); }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+<button onclick="switchLanguage('ar')">عربي</button>
+<button onclick="switchLanguage('en')">English</button>
+</div>
+
+<div class="page-header">
+<h1 data-ar="دليل سياحي لمدينة الإسكندرية" data-en="Tourist Guide for Alexandria">دليل سياحي لمدينة الإسكندرية</h1>
+<p data-ar="اكتشف أهم المعالم التاريخية والطبيعية بطريقة جذابة" data-en="Discover the most important historical and natural landmarks in an engaging way">اكتشف أهم المعالم التاريخية والطبيعية بطريقة جذابة</p>
+</div>
+
+<div class="place-details">
+<div class="details-content">
+<h2 data-ar="حدائق أنطونيادس" data-en="Antoniadis Gardens">حدائق أنطونيادس</h2>
+
+<h3 data-ar="نشأة المكان" data-en="Origin of the Place">نشأة المكان</h3>
+<p data-ar="تم إنشاء حدائق أنطونيادس في الإسكندرية في أوائل القرن العشرين، وتعتبر من أجمل الحدائق العامة بالمدينة. تمتد على مساحة واسعة وتتميز بالمنحنيات الهندسية الجميلة والنوافير والتماثيل الرومانية الكلاسيكية."
+   data-en="Antoniadis Gardens in Alexandria were established in the early 20th century and are among the city’s most beautiful public gardens. They cover a vast area featuring elegant geometric curves, fountains, and classical Roman statues.">
+تم إنشاء حدائق أنطونيادس في الإسكندرية في أوائل القرن العشرين، وتعتبر من أجمل الحدائق العامة بالمدينة. تمتد على مساحة واسعة وتتميز بالمنحنيات الهندسية الجميلة والنوافير والتماثيل الرومانية الكلاسيكية.
+</p>
+
+<h3 data-ar="معلومات تاريخية عنه" data-en="Historical Information">معلومات تاريخية عنه</h3>
+<p data-ar="تعتبر الحدائق مكانًا مثاليًا للاسترخاء والتنزه، وتحتوي على أشجار نادرة ونباتات من جميع أنحاء العالم. يزورها السياح المحليون والأجانب للتمتع بجمال الطبيعة والهندسة المعمارية الكلاسيكية، مما يجعلها من أبرز المعالم السياحية في الإسكندرية."
+   data-en="The gardens are ideal for relaxation and strolling, featuring rare trees and plants from around the world. They are visited by local and international tourists to enjoy natural beauty and classical architecture, making them one of Alexandria’s top attractions.">
+تعتبر الحدائق مكانًا مثاليًا للاسترخاء والتنزه، وتحتوي على أشجار نادرة ونباتات من جميع أنحاء العالم. يزورها السياح المحليون والأجانب للتمتع بجمال الطبيعة والهندسة المعمارية الكلاسيكية، مما يجعلها من أبرز المعالم السياحية في الإسكندرية.
+</p>
+
+<a href="index.html" class="btn-map" data-ar="عودة للصفحة الرئيسية" data-en="Back to Main Page">عودة للصفحة الرئيسية</a>
+</div>
+
+<div class="place-image">
+<img src="y.jpg" alt="حدائق أنطونيادس">
+</div>
+</div>
+
+<script>
+function switchLanguage(lang) {
+document.querySelectorAll('[data-ar]').forEach(el => { el.innerText = (lang==='ar')? el.getAttribute('data-ar') : el.getAttribute('data-en'); });
+}
+</script>
+
+<footer>
+<p>© 2026 دليل سياحي لمدينة الإسكندرية</p>
+<p>اعداد و تنفيذ الطالب احمد عصام محمد توفيق</p>
+</footer>
+</body>
+</html>
